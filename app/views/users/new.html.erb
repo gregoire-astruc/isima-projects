@@ -1,0 +1,8 @@
+<h1>Nouvel Utilisateur</h1>
+<% form_for :user, @user, :url => { :action => "create" } do |f| %>
+    <%= f.label :login %>
+    <%= f.text_field :login %>
+    <%= f.submit 'Cr&eacute;er' %>
+<% end %>
+<%= link_to 'Retour', users_path %>
+
